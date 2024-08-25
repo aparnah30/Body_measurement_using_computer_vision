@@ -1,0 +1,15 @@
+measurements:
+  - name: shoulder_length
+    landmarks:
+      - left_shoulder
+      - right_shoulder
+  - name: arm_length
+    landmarks:
+      - left_shoulder
+      - left_elbow
+      - left_wrist
+  - name: leg_length
+    landmarks:
+      - left_hip
+      - left_knee
+      - left_ankle
