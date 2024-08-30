@@ -1,4 +1,5 @@
 import logging
+import matplotlib.pyplot as plt
 import os
 import warnings
 import sys
@@ -179,6 +180,7 @@ class Landmarker:
             for m in self.measurements:
                 distance = self.calculate_distance_betn_landmarks(front_results, m)
                 table.append([m, distance])
+        
 
         output = tabulate(
             table,
@@ -221,6 +223,11 @@ class Landmarker:
                 side_results.pose_landmarks,  # type: ignore# type: ignore
                 self.landmarks_indices,
             )
+
+# Save images to disk
+        cv2.imwrite('side_image_keypoints.png', self.side_image_keypoints)
+        cv2.imwrite('front_image_keypoints.png', self.front_image_keypoints)
+
         return (
             front_results,
             side_results,
