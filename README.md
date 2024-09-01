@@ -8,7 +8,7 @@ This project utilizes computer vision techniques to estimate body measurements f
 
 - Docker
 - Mediapipe
-
+  
 ### Install Docker
 
 Follow the instructions on the [official Docker website](https://docs.docker.com/get-docker/) to install Docker on your system.
