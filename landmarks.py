@@ -9,7 +9,7 @@ import math
 import argparse
 import cv2
 from mediapipe.python.solutions import (
-    pose,
+    pose, 
 )
 import yaml
 logging.basicConfig(level=logging.INFO)
